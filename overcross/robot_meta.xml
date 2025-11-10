@@ -1,0 +1,137 @@
+<?xml version="1.0" ?>
+<robotMeta>
+ 
+    
+ <robotName>Robot</robotName>
+ 
+    
+ <urdfFileName>Robot.urdf</urdfFileName>
+ 
+    
+ <packageName>ugv_ddsm</packageName>
+ 
+    
+ <meshesDir>meshes </meshesDir>
+ 
+    
+ <robotType>nonspecific</robotType>
+ 
+    
+ <generateCodeForRosVersion>jazzy</generateCodeForRosVersion>
+ 
+    
+ <rootLinkName>l_base_link001</rootLinkName>
+ 
+    
+ <xacroWrapperFileName>Robot_wrapper.urdf.xacro</xacroWrapperFileName>
+ 
+    
+ <controllersConfigFileName>Robot_controllers.yaml</controllersConfigFileName>
+ 
+
+ <joints>
+  
+        
+        
+  <joint>
+   
+            
+   <name>l_base_link001__to__l_DDSM116</name>
+   
+            
+   <jointSpecific>unset</jointSpecific>
+   
+            
+   <jointRotationDirection>unset</jointRotationDirection>
+   
+            
+   <jointRelTotalCenterOfMass_x>0.1200051487937324</jointRelTotalCenterOfMass_x>
+   
+            
+   <jointRelTotalCenterOfMass_y>-0.11</jointRelTotalCenterOfMass_y>
+   
+            
+   <jointRelTotalCenterOfMass_z>-0.02056892087528326</jointRelTotalCenterOfMass_z>
+   
+        
+  </joint>
+  
+        
+        
+  <joint>
+   
+            
+   <name>l_base_link001__to__l_DDSM118</name>
+   
+            
+   <jointSpecific>unset</jointSpecific>
+   
+            
+   <jointRotationDirection>unset</jointRotationDirection>
+   
+            
+   <jointRelTotalCenterOfMass_x>0.1200051487937324</jointRelTotalCenterOfMass_x>
+   
+            
+   <jointRelTotalCenterOfMass_y>0.11</jointRelTotalCenterOfMass_y>
+   
+            
+   <jointRelTotalCenterOfMass_z>-0.02056892087528326</jointRelTotalCenterOfMass_z>
+   
+        
+  </joint>
+  
+        
+        
+  <joint>
+   
+            
+   <name>l_base_link001__to__l_DDSM120</name>
+   
+            
+   <jointSpecific>unset</jointSpecific>
+   
+            
+   <jointRotationDirection>unset</jointRotationDirection>
+   
+            
+   <jointRelTotalCenterOfMass_x>-0.1199948512062676</jointRelTotalCenterOfMass_x>
+   
+            
+   <jointRelTotalCenterOfMass_y>-0.11</jointRelTotalCenterOfMass_y>
+   
+            
+   <jointRelTotalCenterOfMass_z>-0.02056892087528326</jointRelTotalCenterOfMass_z>
+   
+        
+  </joint>
+  
+        
+        
+  <joint>
+   
+            
+   <name>l_base_link001__to__l_DDSM122</name>
+   
+            
+   <jointSpecific>unset</jointSpecific>
+   
+            
+   <jointRotationDirection>unset</jointRotationDirection>
+   
+            
+   <jointRelTotalCenterOfMass_x>-0.1199948512062676</jointRelTotalCenterOfMass_x>
+   
+            
+   <jointRelTotalCenterOfMass_y>0.11</jointRelTotalCenterOfMass_y>
+   
+            
+   <jointRelTotalCenterOfMass_z>-0.02056892087528326</jointRelTotalCenterOfMass_z>
+   
+        
+  </joint>
+  
+        
+    
+ </joints>
+</robotMeta>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="$(find ugv_ddsm_description)/urdf/sensors/rgbd_camera.urdf.xacro"/>
+  <xacro:include filename="$(find ugv_ddsm_description)/urdf/sensors/imu.urdf.xacro"/>
+  
+  <!-- Instantiate the rgbd camera -->
+  <xacro:rgbd_camera 
+    prefix=""
+    camera_name="camera"
+    parent="base_link"
+    xyz_offset="0.15 0.0 0.15"
+    rpy_offset="0 0 0"
+    />
+    
+  <!-- Instantiate the imu sensor -->
+  <xacro:imu_sensor
+    prefix=""
+    parent="base_link"
+    frame_id="imu"
+    xyz_offset="0 0 0.1"
+    rpy_offset="0 0 0"
+    update_rate="15.0"
+    topic_name="imu/data"/>
+</robot>
