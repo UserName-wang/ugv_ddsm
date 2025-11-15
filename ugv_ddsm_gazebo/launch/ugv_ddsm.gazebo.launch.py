@@ -233,14 +233,19 @@ def generate_launch_description():
         output='screen')
 
     # Includes optimizations to minimize latency and bandwidth when streaming image data
+# Includes optimizations to minimize latency and bandwidth when streaming image data
     start_gazebo_ros_image_bridge_cmd = Node(
         package='ros_gz_image',
         executable='image_bridge',
         arguments=[
-            '/cam_1/image'
+            '/cam_left/image',
+            '/cam_right/image',
+            '/cam_back/image'
         ],
         remappings=[
-            ('/cam_1/image', '/cam_1/color/image_raw')
+            ('/cam_left/image', '/cam_left/color/image_raw'),
+            ('/cam_right/image', '/cam_right/color/image_raw'),
+            ('/cam_back/image', '/cam_back/back/image_raw')
         ])
 
     # Spawn the robot

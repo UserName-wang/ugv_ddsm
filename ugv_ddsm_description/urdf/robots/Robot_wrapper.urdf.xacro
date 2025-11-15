@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="Robot">
-    <xacro:arg name="prefix" default=""/>
+
     <xacro:arg name="robot_name" default="ugv_ddsm"/>
+    <xacro:arg name="prefix" default=""/>
     <xacro:arg name="use_gazebo" default="false"/>
     
     <xacro:include filename="$(find ugv_ddsm_description)/urdf/mech/Robot.urdf"/>
     <xacro:include filename="$(find ugv_ddsm_description)/urdf/mech/Robot_sensors.urdf.xacro"/>
-
     <xacro:include filename="$(find ugv_ddsm_description)/urdf/control/velocity_control_plugin.urdf.xacro" />
     <xacro:load_velocity_control_plugin use_gazebo="$(arg use_gazebo)"/>
 

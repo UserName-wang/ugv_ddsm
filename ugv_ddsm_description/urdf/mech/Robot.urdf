@@ -27,12 +27,12 @@
   <gazebo reference="base_link">
     <visual>
         <material>
-            <ambient>0 0.7 0 1</ambient>
-            <diffuse>0 0.7 0 1</diffuse>
-            <specular>0 0.7 0 1</specular>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+            <specular>0.7 0.7 0.7 1</specular>
         </material>
     </visual>
-</gazebo>
+  </gazebo>
 
   <link name="front_right_wheel">
     <visual>
@@ -91,6 +91,16 @@
       <inertia ixx="0.000618671074192379" ixy="-3.339850159274627e-08" ixz="4.8950935571251644e-09" iyy="0.000964185267529386" iyz="-2.6295608372453394e-08" izz="0.0006187064944274721"/>
     </inertial>
   </link>
+  <gazebo reference="front_right_wheel">
+    <visual>
+        <material>
+            <ambient>0 0.0 0 1</ambient>
+            <diffuse>0 0.0 0 1</diffuse>
+            <specular>0 0.0 0 1</specular>
+        </material>
+    </visual>
+  </gazebo>
+
   <link name="front_left_wheel">
     <visual>
       <!--DDSM118/DDSM119.Part__Feature094.-->
@@ -147,6 +157,16 @@
       <inertia ixx="0.000618671074192379" ixy="-3.339850159274627e-08" ixz="4.8950935571251644e-09" iyy="0.000964185267529386" iyz="-2.6295608372453394e-08" izz="0.0006187064944274721"/>
     </inertial>
   </link>
+  <gazebo reference="front_left_wheel">
+    <visual>
+        <material>
+            <ambient>0 0.0 0 1</ambient>
+            <diffuse>0 0.0 0 1</diffuse>
+            <specular>0 0.0 0 1</specular>
+        </material>
+    </visual>
+  </gazebo> 
+
   <link name="rear_right_wheel">
     <visual>
       <!--DDSM120/DDSM121.DDSM117.Part__Feature094.-->
@@ -203,6 +223,16 @@
       <inertia ixx="0.000618671074192379" ixy="-3.339850159274627e-08" ixz="4.8950935571251644e-09" iyy="0.000964185267529386" iyz="-2.6295608372453394e-08" izz="0.0006187064944274721"/>
     </inertial>
   </link>
+  <gazebo reference="rear_right_wheel">
+    <visual>
+        <material>
+            <ambient>0 0.0 0 1</ambient>
+            <diffuse>0 0.0 0 1</diffuse>
+            <specular>0 0.0 0 1</specular>
+        </material>
+    </visual>
+  </gazebo> 
+  
   <link name="rear_left_wheel">
     <visual>
       <!--DDSM122/DDSM123.DDSM119.Part__Feature094.-->
@@ -259,7 +289,16 @@
       <inertia ixx="0.000618671074192379" ixy="-3.339850159274627e-08" ixz="4.8950935571251644e-09" iyy="0.000964185267529386" iyz="-2.6295608372453394e-08" izz="0.0006187064944274721"/>
     </inertial>
   </link>
-  
+  <gazebo reference="rear_left_wheel">
+    <visual>
+        <material>
+            <ambient>0 0.0 0 1</ambient>
+            <diffuse>0 0.0 0 1</diffuse>
+            <specular>0 0.0 0 1</specular>
+        </material>
+    </visual>
+  </gazebo>   
+
   <joint name="base_footprint_joint" type="fixed">
     <parent link="base_footprint"/>
     <child link="base_link"/>
