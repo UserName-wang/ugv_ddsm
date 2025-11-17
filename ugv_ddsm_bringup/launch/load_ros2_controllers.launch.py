@@ -30,14 +30,14 @@ def generate_launch_description():
     # Start diff drive controller
     start_diff_drive_controller_cmd = ExecuteProcess(
         cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
-             'diff_drive_controller'],
+             'diff_drive_controller', '--controller-manager', '/controller_manager'],
         output='screen'
     )
 
     # Start joint state broadcaster
     start_joint_state_broadcaster_cmd = ExecuteProcess(
         cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
-             'joint_state_broadcaster'],
+             'joint_state_broadcaster', '--controller-manager', '/controller_manager'],
         output='screen'
     )
 

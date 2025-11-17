@@ -17,7 +17,7 @@
  <robotType>nonspecific</robotType>
  
     
- <generateCodeForRosVersion>jazzy</generateCodeForRosVersion>
+ <generateCodeForRosVersion>humble</generateCodeForRosVersion>
  
     
  <rootLinkName>l_base_link001</rootLinkName>

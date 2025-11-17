@@ -41,18 +41,12 @@ def process_ros2_controllers_config(context):
 
     home = str(Path.home())
 
-    # 从环境变量获取 ISAAC_ROS_WS 的值
-    isaac_ros_ws = os.environ.get("ISAAC_ROS_WS")
-    if not isaac_ros_ws:
-        raise ValueError("Environment variable 'ISAAC_ROS_WS' is not set!")
+    # 获取包的共享目录而不是依赖ISAAC_ROS_WS环境变量
+    pkg_share = FindPackageShare('ugv_ddsm_description').find('ugv_ddsm_description')
 
     # 构造路径
-    src_config_path = os.path.join(
-        isaac_ros_ws,
-        "src/ugv_ddsm/ugv_ddsm_description/config",
-        robot_name
-    )
-
+    src_config_path = os.path.join(pkg_share, "config", robot_name)
+    
     install_config_path = os.path.join(
         home,
         'ros2_ws/install/ugv_ddsm_description/share/ugv_ddsm_description/config',
